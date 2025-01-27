@@ -97,6 +97,6 @@ public class Picture
         roof.changeColor("green");
         sun.changeColor("yellow");
         sun2.changeColor("magenta");
-        person.changeColor("red");
+        person.changeColor("blue");
     }
 }
