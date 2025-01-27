@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle sun2;
+    private Person person;
     private boolean drawn;
 
     /**
@@ -28,6 +29,7 @@ public class Picture
         roof = new Triangle();  
         sun = new Circle();
         sun2 = new Circle();
+        person = new Person();
         drawn = false;
     }
 
@@ -64,6 +66,10 @@ public class Picture
             sun2.moveVertical(-79);
             sun2.makeVisible();
             
+            person.changeColor("blue");
+            person.moveHorizontal(60);
+            person.makeVisible();
+            
             drawn = true;
         }
     }
@@ -77,6 +83,8 @@ public class Picture
         window.changeColor("white");
         roof.changeColor("black");
         sun.changeColor("black");
+        sun2.changeColor("black");
+        person.changeColor("black");
     }
 
     /**
@@ -88,5 +96,7 @@ public class Picture
         window.changeColor("black");
         roof.changeColor("green");
         sun.changeColor("yellow");
+        sun2.changeColor("magenta");
+        person.changeColor("red");
     }
 }
